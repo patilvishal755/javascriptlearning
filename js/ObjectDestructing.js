@@ -7,9 +7,11 @@ const person = {
   }
 }
 
-const {first, last} = person // object Destructering
+const {first, last, middle = 'Bhagwan', age} = person // object Destructering
 console.log(first)
 console.log(last)
+console.log(middle) // default value if undefined
+console.log(age) // undefined
 
 const {city} = person.location
 console.log(city)
